@@ -1,0 +1,24 @@
+{
+    "name": "pmg/support",
+    "description": "Core utilities for PMG's PHP applicaitons.",
+    "keywords": [],
+    "license": "MIT",
+    "require": {
+        "php": "~7.2",
+        "ramsey/uuid": "~3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~8.0",
+        "friendsofphp/php-cs-fixer": "~2.14"
+    },
+    "autoload": {
+        "psr-4": {
+            "PMG\\Support\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PMG\\Support\\": "test/"
+        }
+    }
+}
