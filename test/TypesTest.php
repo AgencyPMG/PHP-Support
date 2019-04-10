@@ -33,9 +33,9 @@ class TypesTest extends TestCase
     public static function reprProvider()
     {
         return [
-            [new \stdClass(), 'stdClass'],
-            [['array'], '["array"]'],
-            ['a string', 'a string'],
+            [new \stdClass(), 'object(stdClass)'],
+            [['array'], 'array(["array"])'],
+            ['a string', 'string(a string)'],
         ];
     }
 
