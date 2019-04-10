@@ -13,6 +13,7 @@ namespace PMG\Support;
 
 use Ramsey\Uuid\Uuid as RamseyUuid;
 use PMG\Support\Ids\InvalidId;
+use PMG\Support\Ids\NullId;
 use PMG\Support\Ids\StubId;
 use PMG\Support\Ids\Uuid;
 
@@ -56,5 +57,10 @@ final class Ids
     public static function stub(string $value) : StubId
     {
         return new StubId($value);
+    }
+
+    public static function none() : NullId
+    {
+        return new NullId();
     }
 }

@@ -12,6 +12,7 @@
 namespace PMG\Support;
 
 use PMG\Support\Ids\InvalidId;
+use PMG\Support\Ids\NullId;
 
 class IdsTest extends TestCase
 {
@@ -77,5 +78,12 @@ class IdsTest extends TestCase
         $id = Ids::stub('nope');
 
         $this->assertSame('nope', (string) $id);
+    }
+
+    public function testNoneReturnsANullId()
+    {
+        $id = Ids::none();
+
+        $this->assertInstanceOf(NullId::class, $id);
     }
 }
