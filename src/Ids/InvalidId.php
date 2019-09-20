@@ -13,7 +13,7 @@ namespace PMG\Support\Ids;
 
 use PMG\Support\Exception\InvalidArgumentException;
 
-final class InvalidId extends InvalidArgumentException
+class InvalidId extends InvalidArgumentException
 {
     // noop
 }
