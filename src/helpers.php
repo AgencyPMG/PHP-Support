@@ -7,3 +7,10 @@ if (!function_exists('dd')) {
         exit;
     }
 }
+
+if (!function_exists('d')) {
+    // Make the dd() function available for Laravel converts.
+    function d(...$params) {
+        dump($params);
+    }
+}
